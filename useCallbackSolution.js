@@ -1,0 +1,1 @@
+The solution is to avoid returning a function from `useCallback` directly. Instead, refactor to directly use the updated values inside a function within the `useCallback` hook.  This ensures that the values within the inner function are always up-to-date.  The example uses a functional approach rather than returning a new function every time.
