@@ -1,0 +1,1 @@
+This error occurs when using the `useCallback` hook in React Native with a function that returns another function.  The inner function may not have access to the updated state values from the outer function, leading to unexpected behavior.  This is because the inner function is created only once when `useCallback` is initially called, not every time the outer function changes.
