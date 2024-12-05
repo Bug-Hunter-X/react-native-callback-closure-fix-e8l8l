@@ -1,0 +1,1 @@
+This repository demonstrates a common issue with React Native's `useCallback` hook: stale closures. The `useCallbackBug.js` file shows a scenario where a function returned by `useCallback` does not update with changes in its parent's dependencies. This is fixed in `useCallbackSolution.js` using a functional approach to ensure the inner function is recreated when needed.
